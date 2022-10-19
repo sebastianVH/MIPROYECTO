@@ -1,0 +1,16 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+#one {
+
+    margin: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-color: blue;
+    background-color: red;
+    position: absolute;
+    right: 50%;
+    bottom: 0%;
+}
