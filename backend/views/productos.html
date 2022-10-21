@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/validaciones.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/estilos.css">
     <title>Carga de productos</title>
@@ -13,13 +14,14 @@
     <div class="header">
         <h3>Carga de productos</h3>
         <div>
+            <form action="post">
             <div>
                 <p class="letras">Id producto</p>
-                <input type="number" name="Id producto" placeholder="ingrese ID">
+                <input type="number" name="Id_producto" placeholder="ingrese ID">
             </div>
             <div>
                 <p class="letras">Nombre</p> 
-                <input type="text" placeholder="nombre del art.">
+                <input type="text" name="nombre" placeholder="nombre del art.">
             </div>
             <div >
                 <p class="letras">Imagen</p>
@@ -35,13 +37,14 @@
             </div>
             <div>
                 <p class="letras">Categoria</p>
-                <select name="" id=""></select>
+                <select name="categoria" id=""></select>
                 <input  type="text" placeholder="Seleccione categoria">
             </div>
             <div>
-                <button type="submit">Guardar</button>
-                <button type="reset">Cancelar</button>
+                <button name="boton_guardar" type="submit">Guardar</button>
+                <button name="boton_cancelar" type="reset">Cancelar</button>
             </div>
+        </form>
         </div>
         <p>Sebastian Yacono</p>
     </div>
