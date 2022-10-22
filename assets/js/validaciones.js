@@ -30,6 +30,24 @@ messages:{
 
 */
 
+$("#form_categoria").submit(function(){
 
+    var id_cat = $("#id_categoria").val();
+    var nombre_cat = $("#nombre_categoria").val();
+    var validacion = [];
+
+    if ($.trim(id_cat) === ''){
+        validacion.push("Ingrese el ID de categoria")
+    }
+    if ($.trim(nombre_cat) === ''){
+        validacion.push("Ingrese el nombre de la categoria")
+    }
+    if (validacion.length >0){
+        alert("Se detectaron los siguientes errores:\n"+validacion.join("\n"))
+        return false
+    } else {
+        return true;
+    }
+})
 
 
