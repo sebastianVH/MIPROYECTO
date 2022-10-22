@@ -57,6 +57,7 @@ $("#form_productos").submit(function(){
     var descripcion =$("#descripcion").val();
     var precio_prod=$("#precio_producto").val();
     var categoria=$("#categoria").val();
+    var imagen=$("#imagen").val();
     var validacion = [];
 
     if ($.trim(id_prod) === ''){
@@ -73,6 +74,9 @@ $("#form_productos").submit(function(){
     }
     if ($.trim(categoria) === ''){
         validacion.push("Seleccione una categoria")
+    }
+    if ($.trim(imagen) === ''){
+        validacion.push("Seleccione una imagen")
     }
     if (validacion.length >0){
         alert("Se detectaron los siguientes errores:\n"+validacion.join("\n")+"\nSebastian Yacono")
