@@ -3,13 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/estilos.css">
-    <!-- <script src="../../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script> -->
-    	<!--Incluir la librerÃ­a jQuery-->
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<!--Incluir el plugin jQuery Validate-->
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
-    <script src="../../assets/js/validaciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,19 +15,18 @@
             <form id="form_categoria" action="post">
             <div>
                 <label for="id_categoria" class="letras"> ID categoria:</label>
-                <input name="id_categoria" id="id_categoria" type="number" placeholder="Id de la categoria">
+                <input name="id_categoria" id="id_categoria" type="number" placeholder="Id de la categoria" required="">
             </div>
             <div>
                 <label for="nombre_categoria" class="letras">Nombre de la categoria</label>
-                <input name="nombre_categoria" id="nombre_categoria" type="text" placeholder="ingrese categoria">
+                <input name="nombre_categoria" id="nombre_categoria" type="text" placeholder="ingrese categoria" required="">
             </div>
-            
-                <button name="boton_guardar" type="submit">Guardar</Button>
-                <button name="boton_cancelar" type="reset">Cancelar</button>
+
+                <button id="boton_guardar" name="boton_guardar" type="submit">Guardar</Button>
+                <button id="boton_cancelar" name="boton_cancelar" type="reset">Cancelar</button>
             </form>
             <p>Sebastian Yacono</p>
     </div>
-
-
+    <script src="../../assets/js/validaciones.js"></script>
 </body>
 </html>
