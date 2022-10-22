@@ -16,29 +16,29 @@
         <div>
             <form action="post">
             <div>
-                <p class="letras">Id producto</p>
+                <label for="Id_producto" class="letras">Id producto</label>
                 <input type="number" name="Id_producto" placeholder="ingrese ID">
             </div>
             <div>
-                <p class="letras">Nombre</p> 
+                <label for="nombre" class="letras">Nombre</label> 
                 <input type="text" name="nombre" placeholder="nombre del art.">
             </div>
             <div >
-                <p class="letras">Imagen</p>
-                <input type="file">
+                <label for="imagen" class="letras">Imagen</label>
+                <input type="file" name="imagen">
             </div>
             <div>
                 <p class="letras">Descripcion</p>
-                <textarea name="" id="" cols="25" rows="5" placeholder="Descripcion..."></textarea>
+                <textarea name="descripcion" id="" cols="25" rows="5" placeholder="Descripcion..."></textarea>
             </div>
             <div>
-                <p class="letras">Precio</p>
-                <input type="text" placeholder="valor numerico">
+                <label for="precio" class="letras">Precio</label>
+                <input name="precio" type="text" placeholder="valor numerico">
             </div>
             <div>
-                <p class="letras">Categoria</p>
+                <label for="categoria" class="letras">Categoria</label>
                 <select name="categoria" id=""></select>
-                <input  type="text" placeholder="Seleccione categoria">
+                <input  name="categoria" type="text" placeholder="Seleccione categoria">
             </div>
             <div>
                 <button name="boton_guardar" type="submit">Guardar</button>
